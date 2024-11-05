@@ -6,6 +6,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
     console.log("hello there my love")
+    res.json("I am running")
 });
 
 app.post("/create-user", async (req, res) => {
